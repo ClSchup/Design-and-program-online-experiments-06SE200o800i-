@@ -5,8 +5,12 @@
 3. rename the copy folder as your name
 4. Commit-Sync changes
 
-## If you ever have a merge issue, please Merge (Preserve Both Histories)!
+## If you ever have a Git divergence issue issue, please Merge (Preserve Both Histories)!
 
-In your terminal:
+when your local main branch and the remote main branch have different commit histories and Git doesn't know how to reconcile them.
+
+In your terminal, try:
+<br>
 `git config pull.rebase false`
+<br>
 `git pull origin main`
