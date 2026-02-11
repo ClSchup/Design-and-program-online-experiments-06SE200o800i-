@@ -26,7 +26,7 @@ Copy the entire STARTER folder
 
 Paste it into the same session folder
 
-Rename it with your name (e.g., marry_jen, john_doe, your_name)
+Rename it with your name (e.g., marry_J, john_doe, your_name)
 
 Work on your exercise only inside your personal folder
 
@@ -43,7 +43,7 @@ Push/Sync Changes to GitHub
 Session1/ <br>
 ├── STARTER/          ← DO NOT TOUCH! Original materials. Please copy one to your personal workspace! <br>
 ├── marry_J/        ← Another student's workspace <br>
-├── john_D/         ← Another student's workspace <br>
+├── john_doe/         ← Another student's workspace <br>
 └── your_name/        ← Your workspace <br>
 
 
