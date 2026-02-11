@@ -14,15 +14,15 @@ Go to Source Control
 Click the Sync button to pull the latest changes
 
 
-### 2. Never Edit the Starter Files Directly
+### 2. Never Edit the STARTER Files Directly
 
-Under each session folder, you'll find a starter folder containing the exercise materials. 
+Under each session folder, you'll find a STARTER folder containing the exercise materials. 
 
-🙅‍♀️ IMPORTANT: Do NOT edit files directly in the starter folder.
+🙅‍♀️ IMPORTANT: Do NOT edit files directly in the STARTER folder.
 
 ### 3. Create Your Personal Workspace
 
-Copy the entire starter folder
+Copy the entire STARTER folder
 
 Paste it into the same session folder
 
@@ -41,7 +41,7 @@ Push/Sync Changes to GitHub
 
 ####  Folder Structure Example
 Session1/ <br>
-├── starter/          ← DO NOT TOUCH! Original materials. Please copy one to your personal workspace! <br>
+├── STARTER/          ← DO NOT TOUCH! Original materials. Please copy one to your personal workspace! <br>
 ├── marry_J/        ← Another student's workspace <br>
 ├── john_D/         ← Another student's workspace <br>
 └── your_name/        ← Your workspace <br>
