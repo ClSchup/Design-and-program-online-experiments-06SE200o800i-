@@ -44,7 +44,7 @@
       <p id="happiness-q">How happy are you right now?</p>
 
           <label class="likert-option">
-              <input type="radio" name="happiness" id="h-1" value="1" required>
+              <input type="radio" name="happiness" id="h-1" value="1" >
               <span class="num">1</span>
               <span class="desc">Very unhappy</span>
           </label>
@@ -73,7 +73,7 @@
               <span class="desc">Very happy</span>
           </label>
 
-      <div>
+      <div class="final">
       <!--3.2.4 change the type of input to "checkbox" for the "consent_yes" and "consent_no"-->
         <h3>Please confirm your consent: </h3>
         <input type="checkbox" name="consent_yes" value="yes" class="final"> I have been given information about this research study and its risks and benefits and have had the opportunity to ask questions and have them answered to my satisfaction. I consent to participate in this study. <br> 
@@ -90,11 +90,20 @@
       <input id="submit_button" type="button" value="Submit To Continue" class="final">
   
 
-      <!-- # plus 1: make personal information inputs (ID, age, gender) mandatory/required. -->   
-      <!-- # plus 2: use inline css to make asterisk red to indicate that it is required.-->
-      <!-- # plus 3: explore name attribute by deleting the name in id="h-5" and try to select 5-h and any other options-->   
-      <!-- # plus 4: try to use button tags instead of input to create a exit button; learn from documentary https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button-->  
-      <!-- # plus 5: add hyperlink for submit buttom, in order redirect to example_task_instruction.html on the same page -->
+        <!-- # plus 1: make personal information inputs (ID, age, gender) mandatory/required. -->   
+        <!-- # plus 2: use inline css to make/add asterisk in red to indicate that it is required.-->
+        <!-- # plus 3: explore name attribute by deleting the name in id="h-5" and try to select 5 Very happy and any other options-->   
+        <!-- # plus 4: try to use button tags instead of input to create a exit button; learn from documentary https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button-->  
+      <!-- # plus 5: when submit, redirect to a different page example_task_instruction.html learn from https://www.w3schools.com/tags/att_form_action.asp or https://www.w3schools.com/tags/att_formaction.asp -->
+
+    <form action="example_task_instruction.html" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" required><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
 
       </form>
 
