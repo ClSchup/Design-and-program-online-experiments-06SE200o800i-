@@ -4,7 +4,7 @@
 
 /* single type  selector */  
 div{
-    background-color: lightgrey;
+    background-color: beige;
     border: 2px solid black;
     text-align: left;
     margin: 30px;
@@ -30,8 +30,12 @@ head,body {
 /* id selector */
 #submit_button{
     font-weight: bold;
-    color: red;
+    color: blue;
     border: 2px solid black;
 }
 
 
+/* WENN MAN DIE FARBE DES KNOPFES VERÄNDERN WILL */
+.final {
+    background-color: green
+}
