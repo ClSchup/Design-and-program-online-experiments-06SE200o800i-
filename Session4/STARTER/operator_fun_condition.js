@@ -52,7 +52,7 @@ function newFunction(a,b) {
 let myResults = newFunction(1, 3);
 console.log("my results:", myResults); // ?
 
-/* 4.2.5: Now check on your results by run this script in operator.html, then inspect the console.log for correct answers */
+/* 4.2.5: Verify your answers by running the JavaScript script in operator.html. Open the browser's developer console and check the logged output. Compare the results with the expected answers from the previous steps. */
 
 
 /* 4.2.6: 
