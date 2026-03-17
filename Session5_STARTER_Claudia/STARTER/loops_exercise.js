@@ -39,11 +39,14 @@
 let totalTime = 0;
 let thisTrial;
 let j = 0
+console.log("j outside ", j);
 
 
 while (totalTime >= 2000 && j < recordedTimes.length) {
     totalTime += recordedTimes[j] - 200;
     j++;
+    console.log(j)
+    thisTrial = j;  
 }   
 
  console.log(`Cumulative reaction time exceeded 2000 ms at trial ${thisTrial}.`);
