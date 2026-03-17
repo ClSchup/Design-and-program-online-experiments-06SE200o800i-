@@ -25,7 +25,10 @@ console.log(`Expected output: ${isFasterThanThreshold(400)}`)
 // call the function e.g., calculateAverageRT(responseTimes); .
 
 // Write your function here
-
+function calculateAverageRT(responseTimes) {
+    const totalTime = responseTimes.reduce((acc, time) => acc + time, 0);
+    return totalTime / responseTimes.length;
+} 
 
 
   // Example input
