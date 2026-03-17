@@ -7,9 +7,9 @@ ageGroup = 'Adult';}
 
 console.log("ageGroup: ", ageGroup);    
 
-let age = 18
-let ageGroup = age < 18 ? 'child' : 'adult';
-console.log("ageGroup: ", ageGroup);  
+let age2 = 18
+let ageGroup2 = age2 < 18 ? 'child' : 'adult';
+console.log("ageGroup2: ", ageGroup2);  
 
 
 /* Example */
