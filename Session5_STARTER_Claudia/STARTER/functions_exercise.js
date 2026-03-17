@@ -43,7 +43,25 @@ function calculateAverageRT(responseTimes) {
       "Excellent" if the reaction time is below 200ms.
       "Good" if the reaction time is between 200ms and 500ms.
       "Needs Improvement" if the reaction time is above 500ms.
+
+
     2. The console.log statement prints out the feedback for each response time in the array
 
 */
+/* 1.*/ 
+function getPerformanceFeedback(reactionTime) {
+    if (reactionTime < 200) {
+        return "Excellent";
+    } else if (reactionTime >= 200 && reactionTime <= 500) {
+        return "Good";
+    } else {
+        return "Needs Improvement";
+    }  
+}
+
+/* 2. */
+responseTimes.forEach(time => {
+    const feedback = getPerformanceFeedback(time);
+    console.log(`Reaction time: ${time} ms - Feedback: ${feedback}`);
+});   
 
