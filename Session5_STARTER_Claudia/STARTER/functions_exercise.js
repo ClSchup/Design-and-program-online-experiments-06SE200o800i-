@@ -6,7 +6,11 @@
 const threshold = 300; 
 function isFasterThanThreshold(responseTime) {
     // Write logic to check if the reaction time is faster than the threshold
-
+    if (responseTime < threshold) {
+        return "too fast";
+    } else {
+        return "valid";
+    }     
   }
   
 // Call the function with different inputs

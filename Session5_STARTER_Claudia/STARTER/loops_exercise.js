@@ -9,16 +9,23 @@
  // Using a for loop, to get the data only stores your reaction time
  // console.log each iterate index and each reactionTime value accordingly in the loop
  let reactionTimes = [];
+
  // add your code here
-
-
+ for (let i = 0; i < recordedTimes.length; i++) {
+   reactionTimes.push(recordedTimes[i] - 200);
+ }
  console.log("reactionTimes: ",reactionTimes);
 
 
  
  /* # Plus 1: can you think of more than one way of doing it? */
  
- 
+ let i = 0;
+  while ( i < recordedTimes.length) {
+   reactionTimes.push(recordedTimes[i] - 200)
+   ; i++
+ }
+ console.log("reactionTimes: ",reactionTimes);
  
  
  
@@ -34,8 +41,9 @@ let thisTrial;
 let j = 0
 
 
-
-
-
+while (totalTime >= 2000 && j < recordedTimes.length) {
+    totalTime += recordedTimes[j] - 200;
+    j++;
+}   
 
  console.log(`Cumulative reaction time exceeded 2000 ms at trial ${thisTrial}.`);
