@@ -16,10 +16,10 @@ const trials = [
 
 // An example of using filter()
 
-const correctTrials = trials.filter(trial => trial.correct);
-const correctCount = correctTrials.length;
-const acc = correctCount/trials.length
-console.log("Accuracy :", acc); // 0.6
+//const correctTrials = trials.filter(trial => trial.correct);
+//const correctCount = correctTrials.length;
+//const acc = correctCount/trials.length
+//console.log("Accuracy :", acc); // 0.6
 
 
 // Given the example of using filter(), can you use forEach() instead to achieve the same goal?
@@ -31,6 +31,15 @@ console.log("Accuracy :", acc); // 0.6
 let correctCount = 0;
 // start add your code here
 
+trials.forEach( subtrial => {
+
+  if(subtrial.correct){
+    correctCount ++;
+  }
+})
+
+
+
 // your code end
 console.log("Correct answers:", correctCount);
 const acc =  correctCount/trials.length;
@@ -41,7 +50,11 @@ console.log("Accuracy:", acc);
  
 
 /* plus 1: could you think of doing exercise 1 in chaining */
-
+const accuracy = trials
+  .filter(trial => trial.correct)         // Keep only correct trials
+  .map((trial) => trial.correct = 1)                            // Turn each into a 1 (for counting)
+  .reduce((accumulator, currentValue) => accumulator + currentValue, 0) / trials.length
+console.log("Accuracy :", accuracy);
 
 
  
