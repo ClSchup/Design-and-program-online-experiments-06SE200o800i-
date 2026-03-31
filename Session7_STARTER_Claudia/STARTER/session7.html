@@ -30,7 +30,7 @@
         <script>
             const JsPsych = initJsPsych();
             const timeline = [];
-            cosnt fixation = { 
+            const fixation = { 
                 type: jsPsychHtmlKeyboardResponse,
                 stimulus: "<h1>+</h1>",
                 choices: "NO_KEYS",
@@ -48,12 +48,12 @@
                 ctx.clearRect(500, 505, 10, 10);
             }
 
-            const = canvasTrial = {
+            const canvasTrial = {
                 type: jsPsychCanvasKeyboardResponse,
                 canvas_size : [window.innerHeight, window.innerWidth],
-                stimulus: , // leave it empty for now
-                choices: "g"; 
-                trial_duration: 
+                stimulus: drawfn, // leave it empty for now
+                choices: "g",
+                trial_duration: 5000
             }
 
             timeline.push(canvasTrial);
