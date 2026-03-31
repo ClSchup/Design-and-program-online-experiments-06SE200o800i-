@@ -101,9 +101,9 @@ const drawBunnyfn = function (canvas){
 }
 const bunny_trial = {
   type: jsPsychCanvasKeyboardResponse,
-  canvas_size: [400, 400],   // size of drawing area
-  stimulus: drawBunnyfn,     // your drawing function
-  choices: "ALL_KEYS",            // response
+  canvas_size: [800, 800],   // Size of drawing area
+  stimulus: drawBunnyfn,     // Bunny Function
+  choices: "ALL_KEYS",            // response Möglichkeiten
 };
 timeline.push(bunny_trial);
 
