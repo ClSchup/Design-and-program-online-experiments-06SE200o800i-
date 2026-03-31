@@ -37,6 +37,17 @@
                 trial_duration: 1000
             }
             timeline.push(fixation);
+
+
+            const = canvasTrial = {
+                type: jsPsychCanvasKeyboardResponse,
+                canvas_size : [window.innerHeight, window.innerWidth],
+                stimulus: , // leave it empty for now
+                choices: "g"; 
+                trial_duration: 
+            }
+
+            timeline.push(canvasTrial);
             
             jsPsych.run(timeline)
         </script> 
