@@ -38,6 +38,12 @@
             }
             timeline.push(fixation);
 
+            function drawfn(canvas) {
+                const ctx = canvas.getContext("2d"); 
+                console.dir(ctx); 
+                ctx.fillStyle = "pink";
+                ctx.fillRect(500, 500, 100, 50);
+            }
 
             const = canvasTrial = {
                 type: jsPsychCanvasKeyboardResponse,
@@ -48,7 +54,7 @@
             }
 
             timeline.push(canvasTrial);
-            
+
             jsPsych.run(timeline)
         </script> 
 
