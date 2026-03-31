@@ -38,6 +38,7 @@ timeline.push(fixation);
 
 const drawBunnyfn = function (canvas){
     
+    
     const context = canvas.getContext("2d");
    
     // The following is the block of drawing a bunny
@@ -98,7 +99,13 @@ const drawBunnyfn = function (canvas){
        context.fill();
 
 }
-
+const bunny_trial = {
+  type: jsPsychCanvasKeyboardResponse,
+  canvas_size: [400, 400],   // size of drawing area
+  stimulus: drawBunnyfn,     // your drawing function
+  choices: ["ALL_KEYS"],            // response
+};
+timeline.push(bunny_trial);
 
 const end = {
     type: jsPsychHtmlKeyboardResponse,
