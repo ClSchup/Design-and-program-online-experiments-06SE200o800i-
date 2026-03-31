@@ -28,7 +28,7 @@
         //Step 4: run your jsPsych
 
         <script>
-            const JsPsych = initJsPsych();
+            const jsPsych = initJsPsych();
             const timeline = [];
             const fixation = { 
                 type: jsPsychHtmlKeyboardResponse,
@@ -36,9 +36,10 @@
                 choices: "NO_KEYS",
                 trial_duration: 1000
             }
-            //timeline.push(fixation);
 
-            function drawfn(canvas) {
+            timeline.push(fixation);
+
+            const drawfn = function(canvas) {
                 const ctx = canvas.getContext("2d"); 
                 console.dir(ctx); 
                 ctx.fillStyle = "pink";
@@ -59,6 +60,7 @@
             timeline.push(canvasTrial);
 
             jsPsych.run(timeline)
+
         </script> 
 
 

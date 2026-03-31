@@ -8,8 +8,10 @@
 // plus 1: draw an easter egg (with some decoration) next to the bunny 
 
 //step 2:  initiate jsPsych
+const jsPsych = initJsPsych();
 
 // step 3: building timeline 
+const timeline = [];
 
 // instruction 
 const instruction = {
@@ -23,14 +25,16 @@ timeline.push(instruction);
 
 // 7.2.2 make the trial_duration randomly selected from 1s, 2s or 3s
 // fixation 
-const fixation = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: "+",
-    choices: "NO_KEYS",
-    trial_duration: 1000
-}
-timeline.push(fixation);
+const durations = [1000, 2000, 3000];
 
+const fixation = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: "+",
+  choices: "NO_KEYS",
+  trial_duration: durations[Math.floor(Math.random() * durations.length)]
+};
+
+timeline.push(fixation);
 
 const drawBunnyfn = function (canvas){
     
@@ -105,6 +109,6 @@ const end = {
 timeline.push(end)
 
 // step 4: run the timline
-
+jsPsych.run(timeline)
 
 
