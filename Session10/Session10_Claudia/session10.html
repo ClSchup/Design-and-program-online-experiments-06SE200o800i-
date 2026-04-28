@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session 10</title>
+</head>
+<body>
+
+    <h2>Inline Event Handler via HTML attributes</h2>
+    <button onclick="startReactionTestInline()">Start Test</button>
+
+    <h2>DOM Property Event Handler via JS</h2>
+    <button id="domBtn">Start Test</button>
+
+    <h2>addEventListener() via JS</h2>
+    <p>Press the R key</p>
+
+    <script>
+        function startReactionTestInline() {
+        alert("inline alert 1!");
+        }
+
+        document.getElementById("domBtn").onclick = 
+        function myFn() {
+        alert("alert 2");
+        };
+
+        document.addEventListener("keydown", function 
+        myEvent(event) {
+
+            console.log(`my event type: ${event.type}`);
+            console.log(`my target element: ${event.target}`);
+            console.log(`my event = Key: ${event.key})`);
+        })
+
+
+     //           if (event.key === "r" || event.key === "R") {
+      //  alert("alert 3 (R was pressed)");
+      //  } else if (event.key === "e") {
+     //       alert("alert! It's an E key"); 
+      //  } else {
+      //      alert("Wrong Key")
+      //  }})
+
+        document.addEventListener('click', (event) => {
+        console.log(`my event type: ${event.type}`);
+        console.log(`my target element: ${event.target}`);
+        console.log(`where: (${event.clientX}, ${event.clientY})`);
+        });
+
+    
+    </script>
+
+</body>
+</html>
